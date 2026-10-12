@@ -210,7 +210,7 @@ RegisterClientPlugin(pluginData, function(print)
         })
       end
     end
-    print('Scherenaktionen unter ' .. Settings.category .. ' registriert.')
+    -- print('Scherenaktionen unter ' .. Settings.category .. ' registriert.')
     return true
   end
   -- Handles plugin/entity initialization order without overwriting actions.lua.
@@ -219,6 +219,6 @@ RegisterClientPlugin(pluginData, function(print)
       if registerActions() then return end
       Wait(250)
     end
-    print('FEHLER: AVAILABLE_ACTIONS.' .. Settings.category .. ' wurde nicht gefunden.')
+    -- print('FEHLER: AVAILABLE_ACTIONS.' .. Settings.category .. ' wurde nicht gefunden.')
   end)
 end)
